@@ -1,168 +1,59 @@
 {% extends "index.html" %}
 {% block content %}
 
-<div class="d-flex gap-5 my-3 p-3 justify-content-center">
-    <div class="list-group mx-0 w-auto">
-        <h6 class="border-bottom pb-2 mb-0">Seguidores</h6>
-        {% for a in followers %}
-        <label class="list-group-item d-flex gap-2">
-            <input class="form-check-input flex-shrink-0" type="checkbox" value="{{a.username}}">
-            <span>{{a.username}}</span>
-        </label>
-        {% endfor %}
-    </div>
+<div class="container my-5" id="logar">
+    <div class="row align-items-center g-lg-5 py-5">
+        <div class="col-lg-7 text-center text-lg-start">
+          <h1 class="display-4 fw-bold lh-1 mb-3">Acesse seu Intagram pelo Sugar!</h1>
+          <p class="col-lg-10 fs-4">
+              Para usar nossos serviços é fácil! Basta informar seus dados de acesso 
+              ao Instagram que nós nos encarregaremos de trazer até você todos as informações necessárias. 
+          </p>
+        </div>
 
-    <div class="list-group mx-0 w-auto">
-        <h6 class="border-bottom pb-2 mb-0">Seguindo</h6>
-        {% for a in following %}
-        <label class="list-group-item d-flex gap-2">
-            <input class="form-check-input flex-shrink-0" type="checkbox" value="{{a.username}}">
-            <span>{{a.username}}</span>
-        </label>
-        {% endfor %}
-    </div>
+        <div class="col-md-10 mx-auto col-lg-5">
+          <form class="p-4 p-md-5 border rounded-3 bg-light" method="post">
+            <img class="d-block mx-auto mb-4" src="{{url_for('static', filename='img/Instagram.png')}}" alt="" height="57">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="username" name="username" placeholder="Username">
+              <label for="username">Username</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+              <label for="password">Password</label>
+            </div>
+            
+            <button class="w-100 btn btn-lg btn-secondary" type="submit">Logar no Insta</button>
+            <hr class="my-4">
+            <small class="text-muted">Acesse e veja por si mesmo.</small>
+          </form>
+        </div>
+      </div>
+</div>
 
-    <div class="list-group mx-0 w-auto">
-        <h6 class="border-bottom pb-2 mb-0">Quem não te segue de volta</h6>
-        <label class="list-group-item d-flex gap-2">
-        <input class="form-check-input flex-shrink-0" type="checkbox" value="" checked="">
-        <span>
-          First checkbox
-          <small class="d-block text-muted">With support text underneath to add more detail</small>
-        </span>
-      </label>
-      <label class="list-group-item d-flex gap-2">
-        <input class="form-check-input flex-shrink-0" type="checkbox" value="">
-        <span>
-          Second checkbox
-          <small class="d-block text-muted">Some other text goes here</small>
-        </span>
-      </label>
-      <label class="list-group-item d-flex gap-2">
-        <input class="form-check-input flex-shrink-0" type="checkbox" value="">
-        <span>
-          Third checkbox
-          <small class="d-block text-muted">And we end with another snippet of text</small>
-        </span>
-      </label>
+<div class="container my-5" id="home">
+    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+            <h1 class="display-4 fw-bold lh-1">Livre-se de pessoas ingratas</h1>
+            <p class="lead mb-4">
+                O número de pessoas que você segue é bem maior que quantidade de seguidores que tem?
+                Gostaria de saber quem são esses ingatos, sem toda aquela chatice do Instagram?
+                <br>
+                O <strong>Sugar</strong> veio tirar de você esse trabalho massante, trazendo para você 
+                o nome de todos os usuários que estão associados a sua conta. 
+                <br>
+                <br>
+                <b>Ah! Aqui você sabe quem não te segue de volta e você pode deixa-la de seguir, se quiser!</b>
+            </p>
+        </div>
+        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+            <img class="rounded-lg-3" src="{{url_for('static', filename='img/print_insta.png')}}" alt="" width="720">
+        </div>
     </div>
 </div>
 
-
-
-
-
-
-
-
-<div class="my-3 p-3 bg-body rounded shadow-sm">
-    <h6 class="border-bottom pb-2 mb-0">Recent updates</h6>
-    <div class="d-flex text-muted pt-3">
-        <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32"
-            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32"
-            preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#007bff" /><text x="50%" y="50%" fill="#007bff"
-                dy=".3em">32x32</text>
-        </svg>
-
-        <p class="pb-3 mb-0 small lh-sm border-bottom">
-            <strong class="d-block text-gray-dark">@username</strong>
-            Some representative placeholder content, with some information about this user. Imagine this being
-            some sort of status update, perhaps?
-        </p>
-    </div>
-    <div class="d-flex text-muted pt-3">
-        <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32"
-            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32"
-            preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#e83e8c" /><text x="50%" y="50%" fill="#e83e8c"
-                dy=".3em">32x32</text>
-        </svg>
-
-        <p class="pb-3 mb-0 small lh-sm border-bottom">
-            <strong class="d-block text-gray-dark">@username</strong>
-            Some more representative placeholder content, related to this other user. Another status update,
-            perhaps.
-        </p>
-    </div>
-    <div class="d-flex text-muted pt-3">
-        <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32"
-            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32"
-            preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#6f42c1" /><text x="50%" y="50%" fill="#6f42c1"
-                dy=".3em">32x32</text>
-        </svg>
-
-        <p class="pb-3 mb-0 small lh-sm border-bottom">
-            <strong class="d-block text-gray-dark">@username</strong>
-            This user also gets some representative placeholder content. Maybe they did something interesting,
-            and you really want to highlight this in the recent updates.
-        </p>
-    </div>
-    <small class="d-block text-end mt-3">
-        <a href="#">All updates</a>
-    </small>
-</div>
-
-<div class="my-3 p-3 bg-body rounded shadow-sm">
-    <h6 class="border-bottom pb-2 mb-0">Suggestions</h6>
-    <div class="d-flex text-muted pt-3">
-        <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32"
-            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32"
-            preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#007bff" /><text x="50%" y="50%" fill="#007bff"
-                dy=".3em">32x32</text>
-        </svg>
-
-        <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
-            <div class="d-flex justify-content-between">
-                <strong class="text-gray-dark">Full Name</strong>
-                <a href="#">Follow</a>
-            </div>
-            <span class="d-block">@username</span>
-        </div>
-    </div>
-    <div class="d-flex text-muted pt-3">
-        <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32"
-            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32"
-            preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#007bff" /><text x="50%" y="50%" fill="#007bff"
-                dy=".3em">32x32</text>
-        </svg>
-
-        <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
-            <div class="d-flex justify-content-between">
-                <strong class="text-gray-dark">Full Name</strong>
-                <a href="#">Follow</a>
-            </div>
-            <span class="d-block">@username</span>
-        </div>
-    </div>
-    <div class="d-flex text-muted pt-3">
-        <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32"
-            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32"
-            preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#007bff" /><text x="50%" y="50%" fill="#007bff"
-                dy=".3em">32x32</text>
-        </svg>
-
-        <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
-            <div class="d-flex justify-content-between">
-                <strong class="text-gray-dark">Full Name</strong>
-                <a href="#">Follow</a>
-            </div>
-            <span class="d-block">@username</span>
-        </div>
-    </div>
-    <small class="d-block text-end mt-3">
-        <a href="#">All suggestions</a>
-    </small>
+<div class="px-4 py-5 my-5 text-center">
+    <img class="d-block mx-auto mb-4" src="{{url_for('static', filename='img/Sugar_icon.png')}}" alt="" height="250">
 </div>
 
 {% endblock content %}
