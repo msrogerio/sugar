@@ -1,13 +1,59 @@
 {% extends "index.html" %}
 {% block content %}
 
-<div class="d-flex align-items-center p-3 my-3 text-white bg-purple rounded shadow-sm">
-    <img class="me-3" src="/docs/5.2/assets/brand/bootstrap-logo-white.svg" alt="" width="48" height="38">
-    <div class="lh-1">
-        <h1 class="h6 mb-0 text-white lh-1">Bootstrap</h1>
-        <small>Since 2011</small>
+<div class="d-flex gap-5 my-3 p-3 justify-content-center">
+    <div class="list-group mx-0 w-auto">
+        <h6 class="border-bottom pb-2 mb-0">Seguidores</h6>
+        {% for a in followers %}
+        <label class="list-group-item d-flex gap-2">
+            <input class="form-check-input flex-shrink-0" type="checkbox" value="{{a.username}}">
+            <span>{{a.username}}</span>
+        </label>
+        {% endfor %}
+    </div>
+
+    <div class="list-group mx-0 w-auto">
+        <h6 class="border-bottom pb-2 mb-0">Seguindo</h6>
+        {% for a in following %}
+        <label class="list-group-item d-flex gap-2">
+            <input class="form-check-input flex-shrink-0" type="checkbox" value="{{a.username}}">
+            <span>{{a.username}}</span>
+        </label>
+        {% endfor %}
+    </div>
+
+    <div class="list-group mx-0 w-auto">
+        <h6 class="border-bottom pb-2 mb-0">Quem não te segue de volta</h6>
+        <label class="list-group-item d-flex gap-2">
+        <input class="form-check-input flex-shrink-0" type="checkbox" value="" checked="">
+        <span>
+          First checkbox
+          <small class="d-block text-muted">With support text underneath to add more detail</small>
+        </span>
+      </label>
+      <label class="list-group-item d-flex gap-2">
+        <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+        <span>
+          Second checkbox
+          <small class="d-block text-muted">Some other text goes here</small>
+        </span>
+      </label>
+      <label class="list-group-item d-flex gap-2">
+        <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+        <span>
+          Third checkbox
+          <small class="d-block text-muted">And we end with another snippet of text</small>
+        </span>
+      </label>
     </div>
 </div>
+
+
+
+
+
+
+
 
 <div class="my-3 p-3 bg-body rounded shadow-sm">
     <h6 class="border-bottom pb-2 mb-0">Recent updates</h6>
