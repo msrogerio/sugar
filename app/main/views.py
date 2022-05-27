@@ -17,6 +17,7 @@ def index():
 
         usuario = request.form['username']
         senha = request.form['password']
+        
         global PASSWORD
         PASSWORD = senha
 
@@ -70,7 +71,8 @@ def data_returned():
     followers = Folowers.query.filter(Folowers.user_id==id).all()
     following = Following.query.filter(Following.user_id==id).all()
     global PASSWORD
-    print('***', PASSWORD)
+    password = PASSWORD
+    PASSWORD = password
     return render_template('data-returned.html', followers=followers, following=following, username=username)
 
 
@@ -80,23 +82,27 @@ def data_user_clean():
     id = Users.query.filter_by(username=username).first().id
     db.engine.execute(f'DELETE FROM following WHERE user_id = {id}')
     db.engine.execute(f'DELETE FROM folowers WHERE user_id = {id}')
+    db.engine.execute(f'DELETE FROM unfollow WHERE user_id = {id}')
     db.session.commit()
     global PASSWORD
-    print('***', PASSWORD)
+    password = PASSWORD
+    PASSWORD = password
     return redirect(url_for('.index'))
 
 
 @main.route('/check-unfollow', methods=['GET', 'POST'])
 def check_unfollow():
     if request.method == 'GET':
-        global PASSWORD
         username = request.args.get('username')
         id = Users.query.filter_by(username=username).first().id
         following = Following.query.filter(Following.user_id==id).all()
         unfollow = []
         new_driver.newInstanceDriver()
         driver = new_driver.driver    
+        global PASSWORD
         password = PASSWORD
+        PASSWORD = password
+        
         print(password)
         openUrl(driver)
         informCredentials(driver=driver, username=username, password=password)
@@ -105,13 +111,13 @@ def check_unfollow():
         returnCheck(driver)
 
         for a in following:
-            if viewFollowing(driver, a.username) == True:
-                unfollow.append(username)
+            if viewFollowing(driver, a.username, username) == True:
+                unfollow.append(a.username)
                 _unfollow = Unfollow()
                 _unfollow.user_id = id
                 _unfollow.username = a.username
                 db.session.add(_unfollow)
                 db.session.commit()
-
+        driver.quit()
         followers = Folowers.query.filter(Folowers.user_id==id).all()
         return render_template('data-returned.html', followers=followers, following=following, username=username, unfollow=unfollow) 
