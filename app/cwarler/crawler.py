@@ -208,18 +208,9 @@ def getFollowers(driver, my_id):
     return li_followers, li_followers
 
 
-
-def viewFollowing(driver, username, password):
-    
-    openUrl(driver)
-    informCredentials(driver, username, password)
-    submitForm(driver)
-    returnCheck(driver)
-
-    driver.closer()
-
+def viewFollowing(driver, username):
     try:
-        driver.get(f'https://www.instagram.com/accounts/{username}')
+        driver.get(f'https://www.instagram.com/{username}')
         driver.implicitly_wait(6)
     except Exception as ex:
         print(f'{WARNING}[Erro] Não conseguiu abrir a url. {ex} {ENDC}')
@@ -231,7 +222,6 @@ def viewFollowing(driver, username, password):
     try:
         my_username = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.XPATH, '/html/body/div[6]/div/div/div/div[3]/ul/div/li[1]/div/div[2]/div[1]/div/div/span/a/span'))).text
         if my_username == username:
-            driver.close()
             return False
         return True
     except Exception as ex:

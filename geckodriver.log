@@ -4293,3 +4293,915 @@ JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sen
 
 ###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
 
+1653664683676	geckodriver	INFO	Listening on 127.0.0.1:51686
+1653664692173	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "51687" "-foreground" "-no-remote" "-profile" "/var/folders/gn/c06t1mf5135bkdg51ymysv1r0000gn/T/rust_mozprofileVT30rF"
+1653664693193	Marionette	INFO	Marionette enabled
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+DevTools listening on ws://localhost:51687/devtools/browser/01e75a56-60a4-4aa1-9d43-5d2f9a8ac1e0
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+1653664697136	Marionette	INFO	Listening on port 51695
+1653664697188	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877906944
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877907173
+1653664725254	Marionette	INFO	Stopped listening on port 51695
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1653664791826	geckodriver	INFO	Listening on 127.0.0.1:51759
+1653664801361	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "51760" "-foreground" "-no-remote" "-profile" "/var/folders/gn/c06t1mf5135bkdg51ymysv1r0000gn/T/rust_mozprofileh5VPwu"
+1653664802524	Marionette	INFO	Marionette enabled
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+DevTools listening on ws://localhost:51760/devtools/browser/cfecff44-2420-476a-ada4-4bcbd8846262
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+1653664807163	Marionette	INFO	Listening on port 51768
+1653664807315	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877906944
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877907165
+1653664845914	Marionette	INFO	Stopped listening on port 51768
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1653665361781	geckodriver	INFO	Listening on 127.0.0.1:52005
+1653665370548	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "52006" "-foreground" "-no-remote" "-profile" "/var/folders/gn/c06t1mf5135bkdg51ymysv1r0000gn/T/rust_mozprofileQ0oHJP"
+1653665371540	Marionette	INFO	Marionette enabled
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+DevTools listening on ws://localhost:52006/devtools/browser/92a204c0-3f39-43c5-b811-bfdde05e9706
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+1653665375702	Marionette	INFO	Listening on port 52015
+1653665375797	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877906944
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript error: , line 0: InvalidStateError: A mutation operation was attempted on a database that did not allow mutations.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.instagram.com"
+1653665380286	Marionette	INFO	Stopped listening on port 52015
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877907174
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1653665402605	geckodriver	INFO	Listening on 127.0.0.1:52090
+1653665410957	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "52091" "-foreground" "-no-remote" "-profile" "/var/folders/gn/c06t1mf5135bkdg51ymysv1r0000gn/T/rust_mozprofilemCEcsS"
+1653665411880	Marionette	INFO	Marionette enabled
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+DevTools listening on ws://localhost:52091/devtools/browser/4b1897a1-742d-47e5-88cb-d8ea70f3590b
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+1653665415824	Marionette	INFO	Listening on port 52100
+1653665415934	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877906944
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript error: , line 0: InvalidStateError: A mutation operation was attempted on a database that did not allow mutations.
+1653665425553	Marionette	INFO	Stopped listening on port 52100
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877907174
+1653665566118	geckodriver	INFO	Listening on 127.0.0.1:52181
+1653665573813	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "52182" "-foreground" "-no-remote" "-profile" "/var/folders/gn/c06t1mf5135bkdg51ymysv1r0000gn/T/rust_mozprofileMhiLR8"
+1653665574662	Marionette	INFO	Marionette enabled
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+DevTools listening on ws://localhost:52182/devtools/browser/65f63288-b468-43ae-9de8-d8e6c0ff51aa
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+1653665577957	Marionette	INFO	Listening on port 52189
+1653665578184	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877906944
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript error: , line 0: InvalidStateError: A mutation operation was attempted on a database that did not allow mutations.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.instagram.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.instagram.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877907158
+1653665639101	Marionette	INFO	Stopped listening on port 52189
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1653665700774	geckodriver	INFO	Listening on 127.0.0.1:52286
+1653665708779	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "52287" "-foreground" "-no-remote" "-profile" "/var/folders/gn/c06t1mf5135bkdg51ymysv1r0000gn/T/rust_mozprofile3cm7rV"
+1653665709436	Marionette	INFO	Marionette enabled
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+DevTools listening on ws://localhost:52287/devtools/browser/77372c3b-2aed-4475-91e6-523cd86307a0
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+1653665713548	Marionette	INFO	Listening on port 52294
+1653665713650	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877906944
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript error: , line 0: InvalidStateError: A mutation operation was attempted on a database that did not allow mutations.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.instagram.com"
+1653665718273	Marionette	INFO	Stopped listening on port 52294
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877907165
+1653665759638	geckodriver	INFO	Listening on 127.0.0.1:52368
+1653665767350	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "52369" "-foreground" "-no-remote" "-profile" "/var/folders/gn/c06t1mf5135bkdg51ymysv1r0000gn/T/rust_mozprofile45jtS6"
+1653665768170	Marionette	INFO	Marionette enabled
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+DevTools listening on ws://localhost:52369/devtools/browser/500ccbf1-3d29-4066-92c7-7204a7f8598f
+1653665771445	Marionette	INFO	Listening on port 52376
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+1653665771655	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877906944
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript error: , line 0: InvalidStateError: A mutation operation was attempted on a database that did not allow mutations.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.instagram.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.instagram.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1653665914287	Marionette	INFO	Stopped listening on port 52376
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877907157
+1653665928643	geckodriver	INFO	Listening on 127.0.0.1:52465
+1653665937628	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "52466" "-foreground" "-no-remote" "-profile" "/var/folders/gn/c06t1mf5135bkdg51ymysv1r0000gn/T/rust_mozprofilegmupD1"
+1653665938655	Marionette	INFO	Marionette enabled
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+DevTools listening on ws://localhost:52466/devtools/browser/b4554242-37eb-4c37-ac26-f8138840929a
+1653665942423	Marionette	INFO	Listening on port 52473
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+1653665942662	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877906944
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript error: , line 0: InvalidStateError: A mutation operation was attempted on a database that did not allow mutations.
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877907162
+1653666047474	Marionette	INFO	Stopped listening on port 52473
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1653666189445	geckodriver	INFO	Listening on 127.0.0.1:52590
+1653666196580	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "52591" "-foreground" "-no-remote" "-profile" "/var/folders/gn/c06t1mf5135bkdg51ymysv1r0000gn/T/rust_mozprofileQH1DSo"
+1653666197448	Marionette	INFO	Marionette enabled
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+DevTools listening on ws://localhost:52591/devtools/browser/ad1c5c34-5a20-4a91-9356-1eb8bc326ce6
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+1653666200819	Marionette	INFO	Listening on port 52597
+1653666200882	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877906944
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript error: , line 0: InvalidStateError: A mutation operation was attempted on a database that did not allow mutations.
+1653666210300	Marionette	INFO	Stopped listening on port 52597
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877907173
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1653666223390	geckodriver	INFO	Listening on 127.0.0.1:52662
+1653666231035	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "52663" "-foreground" "-no-remote" "-profile" "/var/folders/gn/c06t1mf5135bkdg51ymysv1r0000gn/T/rust_mozprofileetxJhq"
+1653666231811	Marionette	INFO	Marionette enabled
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+DevTools listening on ws://localhost:52663/devtools/browser/2509edaa-1841-4c22-a992-38c7102c9dae
+1653666235165	Marionette	INFO	Listening on port 52672
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+1653666235282	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877906944
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript error: , line 0: InvalidStateError: A mutation operation was attempted on a database that did not allow mutations.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.instagram.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.instagram.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1653666366232	Marionette	INFO	Stopped listening on port 52672
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877907173
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1653666392360	geckodriver	INFO	Listening on 127.0.0.1:52762
+1653666400243	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "52763" "-foreground" "-no-remote" "-profile" "/var/folders/gn/c06t1mf5135bkdg51ymysv1r0000gn/T/rust_mozprofileQ3GMwy"
+1653666401091	Marionette	INFO	Marionette enabled
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+DevTools listening on ws://localhost:52763/devtools/browser/b384d16f-3ba1-4c61-b3ea-8d2da7638e0c
+1653666404244	Marionette	INFO	Listening on port 52771
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+1653666404341	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877906944
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript error: , line 0: InvalidStateError: A mutation operation was attempted on a database that did not allow mutations.
+1653666414363	Marionette	INFO	Stopped listening on port 52771
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877907166
+1653666606539	geckodriver	INFO	Listening on 127.0.0.1:52877
+1653666614295	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "52878" "-foreground" "-no-remote" "-profile" "/var/folders/gn/c06t1mf5135bkdg51ymysv1r0000gn/T/rust_mozprofileEoxDXR"
+1653666615168	Marionette	INFO	Marionette enabled
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+DevTools listening on ws://localhost:52878/devtools/browser/83261f51-6f26-423c-bb43-dfecddfd07ec
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+1653666618567	Marionette	INFO	Listening on port 52886
+1653666618656	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877906944
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript error: , line 0: InvalidStateError: A mutation operation was attempted on a database that did not allow mutations.
+JavaScript error: , line 0: InvalidStateError: A mutation operation was attempted on a database that did not allow mutations.
+JavaScript error: , line 0: InvalidStateError: A mutation operation was attempted on a database that did not allow mutations.
+JavaScript error: , line 0: InvalidStateError: A mutation operation was attempted on a database that did not allow mutations.
+JavaScript error: , line 0: InvalidStateError: A mutation operation was attempted on a database that did not allow mutations.
+JavaScript error: , line 0: InvalidStateError: A mutation operation was attempted on a database that did not allow mutations.
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877907163
+1653666674638	Marionette	INFO	Stopped listening on port 52886
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1653666749327	geckodriver	INFO	Listening on 127.0.0.1:52972
+1653666751479	geckodriver	INFO	Listening on 127.0.0.1:52979
+1653666759794	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "52973" "-foreground" "-no-remote" "-profile" "/var/folders/gn/c06t1mf5135bkdg51ymysv1r0000gn/T/rust_mozprofilezUJlQF"
+1653666760949	Marionette	INFO	Marionette enabled
+1653666763529	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "52980" "-foreground" "-no-remote" "-profile" "/var/folders/gn/c06t1mf5135bkdg51ymysv1r0000gn/T/rust_mozprofileYQJlVF"
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+1653666764464	Marionette	INFO	Marionette enabled
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+DevTools listening on ws://localhost:52973/devtools/browser/60bfc538-81dd-4af4-915f-584f8e6647e0
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+1653666765879	Marionette	INFO	Listening on port 52989
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+1653666766007	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877906944
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript error: , line 0: InvalidStateError: A mutation operation was attempted on a database that did not allow mutations.
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+DevTools listening on ws://localhost:52980/devtools/browser/e303d6aa-fa86-4dbc-a3c8-ebe41b933dc6
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+1653666770857	Marionette	INFO	Listening on port 53029
+1653666770985	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877906944
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript error: , line 0: InvalidStateError: A mutation operation was attempted on a database that did not allow mutations.
+JavaScript error: , line 0: InvalidStateError: A mutation operation was attempted on a database that did not allow mutations.
+JavaScript error: , line 0: InvalidStateError: A mutation operation was attempted on a database that did not allow mutations.
+JavaScript error: , line 0: InvalidStateError: A mutation operation was attempted on a database that did not allow mutations.
+JavaScript error: , line 0: InvalidStateError: A mutation operation was attempted on a database that did not allow mutations.
+Marionette threw an error: TypeError: browsingContext.currentWindowGlobal is null
+getMarionetteCommandsActorProxy/get/<@chrome://remote/content/marionette/actors/MarionetteCommandsParent.jsm:332:29
+
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877907152
+1653666792487	Marionette	INFO	Stopped listening on port 52989
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+Marionette threw an error: TypeError: browsingContext.currentWindowGlobal is null
+getMarionetteCommandsActorProxy/get/<@chrome://remote/content/marionette/actors/MarionetteCommandsParent.jsm:332:29
+
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877907174
+1653666802779	Marionette	INFO	Stopped listening on port 53029
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1653666867664	geckodriver	INFO	Listening on 127.0.0.1:53169
+1653666875484	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "53170" "-foreground" "-no-remote" "-profile" "/var/folders/gn/c06t1mf5135bkdg51ymysv1r0000gn/T/rust_mozprofilezN3JoR"
+1653666876129	Marionette	INFO	Marionette enabled
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+DevTools listening on ws://localhost:53170/devtools/browser/164d6885-0060-4eaf-bdf1-dca9f38803f2
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+1653666879354	Marionette	INFO	Listening on port 53179
+1653666879539	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877906944
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript error: , line 0: InvalidStateError: A mutation operation was attempted on a database that did not allow mutations.
+JavaScript error: , line 0: InvalidStateError: A mutation operation was attempted on a database that did not allow mutations.
+JavaScript error: , line 0: InvalidStateError: A mutation operation was attempted on a database that did not allow mutations.
+JavaScript error: , line 0: InvalidStateError: A mutation operation was attempted on a database that did not allow mutations.
+JavaScript error: , line 0: InvalidStateError: A mutation operation was attempted on a database that did not allow mutations.
+JavaScript error: , line 0: InvalidStateError: A mutation operation was attempted on a database that did not allow mutations.
+JavaScript error: , line 0: InvalidStateError: A mutation operation was attempted on a database that did not allow mutations.
+Marionette threw an error: TypeError: browsingContext.currentWindowGlobal is null
+getMarionetteCommandsActorProxy/get/<@chrome://remote/content/marionette/actors/MarionetteCommandsParent.jsm:332:29
+
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877907173
+1653666942067	Marionette	INFO	Stopped listening on port 53179
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1653667091417	geckodriver	INFO	Listening on 127.0.0.1:53261
+1653667102877	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "53262" "-foreground" "-no-remote" "-profile" "/var/folders/gn/c06t1mf5135bkdg51ymysv1r0000gn/T/rust_mozprofilejkJgy2"
+1653667103675	Marionette	INFO	Marionette enabled
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+DevTools listening on ws://localhost:53262/devtools/browser/3a1f8b39-2b84-49d0-87e4-6a7eaae85fce
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+1653667107510	Marionette	INFO	Listening on port 53276
+1653667107644	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877906944
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript error: , line 0: InvalidStateError: A mutation operation was attempted on a database that did not allow mutations.
+JavaScript error: , line 0: InvalidStateError: A mutation operation was attempted on a database that did not allow mutations.
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877907154
+1653667122381	Marionette	INFO	Stopped listening on port 53276
+Marionette threw an error: TypeError: browsingContext.currentWindowGlobal is null
+getMarionetteCommandsActorProxy/get/<@chrome://remote/content/marionette/actors/MarionetteCommandsParent.jsm:332:29
+
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+[2022-05-27T15:58:42Z ERROR glean] Can't persist ping lifetime data: Error { kind: Rkv(IoError(Os { code: 2, kind: NotFound, message: "No such file or directory" })) }
+1653667123019	geckodriver::marionette	ERROR	Failed to close browser connection: Socket is not connected (os error 57)
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1653667128946	geckodriver	INFO	Listening on 127.0.0.1:53346
+1653667137832	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "53347" "-foreground" "-no-remote" "-profile" "/var/folders/gn/c06t1mf5135bkdg51ymysv1r0000gn/T/rust_mozprofile4Fd08U"
+1653667138582	Marionette	INFO	Marionette enabled
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+DevTools listening on ws://localhost:53347/devtools/browser/5dda91e1-7d0f-4d41-9ccc-b6162d3ae232
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+1653667143308	Marionette	INFO	Listening on port 53355
+1653667143405	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877906944
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript error: , line 0: InvalidStateError: A mutation operation was attempted on a database that did not allow mutations.
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877907174
+1653667151747	Marionette	INFO	Stopped listening on port 53355
+Marionette threw an error: TypeError: browsingContext.currentWindowGlobal is null
+getMarionetteCommandsActorProxy/get/<@chrome://remote/content/marionette/actors/MarionetteCommandsParent.jsm:332:29
+
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1653667151999	geckodriver::marionette	ERROR	Failed to close browser connection: Socket is not connected (os error 57)
+[2022-05-27T15:59:12Z ERROR glean] Can't persist ping lifetime data: Error { kind: Rkv(IoError(Os { code: 2, kind: NotFound, message: "No such file or directory" })) }
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1653667488649	geckodriver	INFO	Listening on 127.0.0.1:53470
+1653667496741	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "53471" "-foreground" "-no-remote" "-profile" "/var/folders/gn/c06t1mf5135bkdg51ymysv1r0000gn/T/rust_mozprofileh9ioE9"
+1653667497739	Marionette	INFO	Marionette enabled
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+DevTools listening on ws://localhost:53471/devtools/browser/42c81251-4953-4490-af58-c67f6886764a
+1653667502436	Marionette	INFO	Listening on port 53480
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+1653667502544	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877906944
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript error: , line 0: InvalidStateError: A mutation operation was attempted on a database that did not allow mutations.
+JavaScript error: , line 0: InvalidStateError: A mutation operation was attempted on a database that did not allow mutations.
+JavaScript error: , line 0: InvalidStateError: A mutation operation was attempted on a database that did not allow mutations.
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877907169
+1653667527083	Marionette	INFO	Stopped listening on port 53480
+Marionette threw an error: TypeError: browsingContext.currentWindowGlobal is null
+getMarionetteCommandsActorProxy/get/<@chrome://remote/content/marionette/actors/MarionetteCommandsParent.jsm:332:29
+
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1653667527333	geckodriver::marionette	ERROR	Failed to close browser connection: Socket is not connected (os error 57)
+[2022-05-27T16:05:27Z ERROR glean] Can't persist ping lifetime data: Error { kind: Rkv(IoError(Os { code: 2, kind: NotFound, message: "No such file or directory" })) }
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1653667533935	geckodriver	INFO	Listening on 127.0.0.1:53573
+1653667542900	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "53574" "-foreground" "-no-remote" "-profile" "/var/folders/gn/c06t1mf5135bkdg51ymysv1r0000gn/T/rust_mozprofileN21UZ3"
+1653667543958	Marionette	INFO	Marionette enabled
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+DevTools listening on ws://localhost:53574/devtools/browser/3ad1fbee-24df-481d-8034-178ec3c21271
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+1653667548462	Marionette	INFO	Listening on port 53584
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+1653667548608	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877906944
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript error: , line 0: InvalidStateError: A mutation operation was attempted on a database that did not allow mutations.
+JavaScript error: , line 0: InvalidStateError: A mutation operation was attempted on a database that did not allow mutations.
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877907169
+1653667565132	Marionette	INFO	Stopped listening on port 53584
+Marionette threw an error: TypeError: browsingContext.currentWindowGlobal is null
+getMarionetteCommandsActorProxy/get/<@chrome://remote/content/marionette/actors/MarionetteCommandsParent.jsm:332:29
+
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1653667565222	geckodriver::marionette	ERROR	Failed to close browser connection: Socket is not connected (os error 57)
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1653667754255	geckodriver	INFO	Listening on 127.0.0.1:53724
+1653667762766	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "53725" "-foreground" "-no-remote" "-profile" "/var/folders/gn/c06t1mf5135bkdg51ymysv1r0000gn/T/rust_mozprofileFzTJZj"
+1653667763723	Marionette	INFO	Marionette enabled
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+DevTools listening on ws://localhost:53725/devtools/browser/86afcdd3-6d77-4b40-b84d-aea5f886edae
+1653667768753	Marionette	INFO	Listening on port 53733
+1653667768795	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877906944
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript error: , line 0: InvalidStateError: A mutation operation was attempted on a database that did not allow mutations.
+1653667779978	Marionette	INFO	Stopped listening on port 53733
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877907174
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1653667808554	geckodriver	INFO	Listening on 127.0.0.1:53818
+1653667816532	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "53819" "-foreground" "-no-remote" "-profile" "/var/folders/gn/c06t1mf5135bkdg51ymysv1r0000gn/T/rust_mozprofileNhetYu"
+1653667817202	Marionette	INFO	Marionette enabled
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+DevTools listening on ws://localhost:53819/devtools/browser/a7a27b85-dfac-4679-a7e9-88ff0a8e7bf0
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+1653667820793	Marionette	INFO	Listening on port 53826
+1653667820918	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877906944
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: , line 0: InvalidStateError: A mutation operation was attempted on a database that did not allow mutations.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.instagram.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.instagram.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1653667951215	Marionette	INFO	Stopped listening on port 53826
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877907172
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DestroyBrowsingContextGroup) Channel closing: too late to send/recv, messages will be lost
+
+1653667958979	geckodriver	INFO	Listening on 127.0.0.1:53919
+1653667967430	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "53920" "-foreground" "-no-remote" "-profile" "/var/folders/gn/c06t1mf5135bkdg51ymysv1r0000gn/T/rust_mozprofileqQriPt"
+1653667968333	Marionette	INFO	Marionette enabled
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+DevTools listening on ws://localhost:53920/devtools/browser/7f02a657-dbbb-4acb-b8e1-961ecca91cd4
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+1653667972133	Marionette	INFO	Listening on port 53927
+1653667972219	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877906944
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts1.js, line 1: unreachable code after return statement
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/content_scripts2.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript warning: moz-extension://11aa5070-35b6-4548-a92c-bd3ff2971646/js/background.js, line 1: unreachable code after return statement
+JavaScript error: , line 0: InvalidStateError: A mutation operation was attempted on a database that did not allow mutations.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.instagram.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.instagram.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit {487609b5-5ca6-4c62-8523-11f3e1db851c}.274877907173
+1653668050423	Marionette	INFO	Stopped listening on port 53927
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1653668050523	geckodriver::marionette	ERROR	Failed to close browser connection: Socket is not connected (os error 57)
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+

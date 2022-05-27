@@ -11,6 +11,7 @@ def shell():
         db=db,
         Users=Users,
         Folowers=Folowers,
-        Following=Following
+        Following=Following,
+        Unfollow=Unfollow
     )
 
