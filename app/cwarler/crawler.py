@@ -119,13 +119,21 @@ def openFollowing(driver):
         return False
 
 
-def getFollowers(driver, my_id):
+def getFollowers(driver, my_id, logando):
     if openFollowers(driver) == False:
         return None, None
     followers, following = getFollowingFollwers(driver)
+    
+    logando.mensage = f'Capturou. Seguidores: {followers}, Seguindo {following}'
+    db.session.add(logando)
+    db.session.commit()
+    
     if not followers:
         return None, None
     li_followers = []
+    logando.mensage = f'Iniciando captura de seguidores ...'
+    db.session.add(logando)
+    db.session.commit()
     while True:
         try:
             driver.implicitly_wait(10)
@@ -137,10 +145,12 @@ def getFollowers(driver, my_id):
             )
         except Exception as ex:
             print(f'{WARNING}[INFO] Chegou ao fim da barra {ex}.{ENDC}')
-        
         try: 
             li_followers = driver.find_elements_by_class_name('T0kll')
             print('[INFO] Tamanho do vetor', len(li_followers))
+            logando.mensage = f'{len(li_followers)} usuários capturados até o momento'
+            db.session.add(logando)
+            db.session.commit()
             if len(li_followers) >= int(followers):
                 break
             else:
@@ -170,7 +180,9 @@ def getFollowers(driver, my_id):
     
     if not following:
         return None, None
-
+    logando.mensage = f'Iniciando captura daqueles que você segue ...'
+    db.session.add(logando)
+    db.session.commit()
     li_following = []
     while True:
         try:
@@ -188,6 +200,9 @@ def getFollowers(driver, my_id):
         try: 
             li_following = driver.find_elements_by_class_name('T0kll')
             print('[INFO] Tamanho do vetor', len(li_following))
+            logando.mensage = f'{len(li_following)} usuários capturados até o momento'
+            db.session.add(logando)
+            db.session.commit()
             if len(li_following) >= int(following):
                 break
             else:
@@ -208,14 +223,19 @@ def getFollowers(driver, my_id):
     return li_followers, li_followers
 
 
-def viewFollowing(driver, username, actual_user):
+def viewFollowing(driver, username, actual_user, logando):
+    logando.mensage = f'Preparando para consulta de usuários que não te seguem de volta...'
+    db.session.add(logando)
+    db.session.commit()
     try:
         driver.get(f'https://www.instagram.com/{username}')
         driver.implicitly_wait(6)
     except Exception as ex:
         print(f'{WARNING}[Erro] Não conseguiu abrir a url. {ex} {ENDC}')
         return False
-
+    logando.mensage = f'Acessou a urls para o perfil {username}'
+    db.session.add(logando)
+    db.session.commit()
     if openFollowing(driver) == False:
         return False
     try:
@@ -223,6 +243,9 @@ def viewFollowing(driver, username, actual_user):
         print(f'[INFO] primeiro usuário {my_username} eu: {actual_user}')
         if my_username == actual_user:
             return False
+        logando.mensage = f'{username} não te segue de volta.'
+        db.session.add(logando)
+        db.session.commit()
         return True
     except Exception as ex:
         print(f'{WARNING}[Erro] Não conseguiu exetuar a rotina de intereção com o selenium. {ex} {ENDC}')

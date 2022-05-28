@@ -12,6 +12,7 @@ def shell():
         Users=Users,
         Folowers=Folowers,
         Following=Following,
-        Unfollow=Unfollow
+        Unfollow=Unfollow,
+        CheckProgress=CheckProgress
     )
 

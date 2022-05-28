@@ -1,5 +1,4 @@
 from . import db
-from werkzeug.security import generate_password_hash, check_password_hash
 
 
 class Users(db.Model):
@@ -50,3 +49,14 @@ class Unfollow(db.Model):
 
     def __repr__(self):
         return '[ Unfollow ] id: %d | username: %s ' % (self.id, self.username)
+
+
+class CheckProgress(db.Model):
+    __tablename__ = 'check_progress'
+    id = db.Column(db.Integer(), primary_key=True)  
+    mensage = db.Column(db.String(1000), default='')
+    status = db.Column(db.Boolean(), default=0)
+    user_id = db.Column(db.Integer(), db.ForeignKey('users.id'), nullable=True)
+
+    def __repr__(self):
+        return '[ CheckProgress ] id: %d | total de registros: %s ' % (self.id, self.total_recordsusername)
