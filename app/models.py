@@ -6,7 +6,7 @@ class Users(db.Model):
     id = db.Column(db.Integer(), primary_key=True)  
     username = db.Column(db.String(255), default='')
     name = db.Column(db.String(532), default='')
-    email = db.Column(db.String(255), default='')
+    login = db.Column(db.String(255), default='')
     _folowers = db.relationship('Folowers', backref='folowers')
     _folowing = db.relationship('Following', backref='folowing')
     _unfollow = db.relationship('Unfollow', backref='folowing')

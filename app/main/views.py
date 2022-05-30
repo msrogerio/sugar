@@ -21,28 +21,36 @@ def index():
         
         global PASSWORD
         PASSWORD = senha
-
+        user = Users.query.filter_by(login=usuario).first()
+        if user:
+            id= user.id
+        else:
+            user = Users()
+            user.login = usuario
+            db.session.add(user)
+            db.session.commit()
+            user = Users.query.filter_by(username=usuario).first()
+        
         logando = CheckProgress()
         logando.mensage = 'Preparando o acesso ...'
+        logando.user_id = user.id
         logando.status = False
-        logando.total_records = 0
-        logando.treated_records = 0
         db.session.add(logando)
         db.session.commit()
 
-        logando =  CheckProgress.query.order_by(desc(CheckProgress.id)).first()
+        logando =  CheckProgress.query.filter(CheckProgress.user_id==user.id).first()
 
         if openUrl(driver) == False:
             driver.quit()
             return render_template('home.html')
-        logando.mensage = f'Acessando ao Instagram'
+        logando.mensage = f'Acessando o Instagram.'
         db.session.add(logando)
         db.session.commit()
 
         if informCredentials(driver, usuario, senha) == False:
             driver.quit()
             return render_template('home.html')
-        logando.mensage = f'Validando usuário e senha'
+        logando.mensage = f'Validando usuário e senha.'
         db.session.add(logando)
         db.session.commit()
         
@@ -52,11 +60,11 @@ def index():
         
         if returnCheck(driver):
             driver.quit()
-            logando.mensage = f'Usuários e senhas não aceitos.'
+            logando.mensage = f'Usuário ou senha incorretos.'
             db.session.add(logando)
             db.session.commit()
             return render_template('home.html')
-        logando.mensage = f'Usuários e senhas aceitos'
+        logando.mensage = f'Acesso autorizado.'
         db.session.add(logando)
         db.session.commit()
 
@@ -69,38 +77,36 @@ def index():
             return render_template('home.html')
 
         username = getMyUserName(driver)
+        user.username = username
+        db.session.add(user)
+        db.session.commit()
+        
         if not username:
             return render_template('home.html')
+        
         logando.mensage = f'Perfil do usuários {username} acesado.'
         db.session.add(logando)
         db.session.commit()
-        temp = Users.query.filter_by(username=username).first()
-        if temp:
-            id= temp.id
-        else:
-            user = Users()
-            user.username = username
-            user.email = usuario
-            db.session.add(user)
-            db.session.commit()
-            id = Users.query.filter_by(username=username).first().id
+        
         li_followers, li_following = getFollowers(driver, id,  logando)
         if not li_following and not li_followers:
             return render_template('home.html') 
         driver.quit()
-        return redirect(url_for('.data_returned', username=username, acao_id=logando.id))
+        return redirect(url_for('.data_returned', username=username))
+
 
 @main.route('/data-returned', methods=['GET'])
 def data_returned():
     username=request.args.get('username')
-    logando=request.args.get('acao_id')
     id = Users.query.filter_by(username=username).first().id
     followers = Folowers.query.filter(Folowers.user_id==id).all()
+    print(len(followers))
     following = Following.query.filter(Following.user_id==id).all()
+    print(len(following))
     global PASSWORD
     password = PASSWORD
     PASSWORD = password
-    return render_template('data-returned.html', followers=followers, following=following, username=username, acao_id=logando)
+    return render_template('data-returned.html', followers=followers, following=following, username=username)
 
 
 @main.route('/data-user-clean', methods=['GET'])
@@ -110,6 +116,8 @@ def data_user_clean():
     db.engine.execute(f'DELETE FROM following WHERE user_id = {id}')
     db.engine.execute(f'DELETE FROM folowers WHERE user_id = {id}')
     db.engine.execute(f'DELETE FROM unfollow WHERE user_id = {id}')
+    db.engine.execute(f'DELETE FROM check_progress WHERE user_id = {id}')
+    db.engine.execute(f'DELETE FROM users WHERE id = {id}')
     db.session.commit()
     global PASSWORD
     password = PASSWORD
@@ -121,8 +129,8 @@ def data_user_clean():
 def check_unfollow():
     if request.method == 'GET':
         username = request.args.get('username')
-        logando=request.args.get('acao_id')
         id = Users.query.filter_by(username=username).first().id
+        logando = CheckProgress.query.filter(CheckProgress.user_id==id).first()
         following = Following.query.filter(Following.user_id==id).all()
         new_driver.newInstanceDriver()
         driver = new_driver.driver    
@@ -146,17 +154,55 @@ def check_unfollow():
         driver.quit()
         followers = Folowers.query.filter(Folowers.user_id==id).all()
         unfollow = Unfollow.query.filter(Unfollow.user_id==id).all()
-        return render_template('data-returned.html', followers=followers, following=following, username=username, unfollow=unfollow, acao_id=logando) 
+        return render_template('data-returned.html', followers=followers, following=following, username=username, unfollow=unfollow) 
 
 
 @main.route('/check-progress', methods=['GET'])
-def checkProgress():
-    logando =  CheckProgress.query.order_by(desc(CheckProgress.id)).first()
-    return jsonify(logando.mensage)
-
-
-@main.route('/check-progress1', methods=['GET'])
 def checkProgress1():
-    logando=request.args.get('acao_id')
-    logando =  CheckProgress.query.get(logando)
+    username = None
+    login = None
+    try:
+        username=request.args.get('username')
+    except:
+        pass
+    try:
+        login=request.args.get('login')
+    except:
+        pass
+    if username:
+        return queryForUsername(username)
+    if login:
+        return queryForLogin(login)
+
+
+def queryForUsername(username):
+    user = Users.query.filter(Users.username==username).first()
+    logando = CheckProgress.query.filter(CheckProgress.user_id==user.id).first()
     return jsonify(logando.mensage)
+    
+
+def queryForLogin(login):
+    user = Users.query.filter(Users.login==login).first()
+    if user:
+        logando = CheckProgress.query.filter(CheckProgress.user_id==user.id).first()
+        if not logando:
+            logando = CheckProgress()
+            logando.mensage = 'Startando a aplicação.'
+            logando.user_id = user.id
+            db.session.add(logando)
+            db.session.commit()
+            logando = CheckProgress.query.filter(CheckProgress.user_id==user.id).first()
+        return jsonify(logando.mensage)
+    else:
+        user = Users()
+        user.login = login
+        db.session.add(user)
+        db.session.commit()
+        user = Users.query.filter(Users.login==login).first()
+        logando = CheckProgress()
+        logando.mensage = 'Startando a aplicação.'
+        logando.user_id = user.id
+        db.session.add(logando)
+        db.session.commit()
+        logando = CheckProgress.query.filter(CheckProgress.user_id==user.id).first()
+        return jsonify(logando.mensage)

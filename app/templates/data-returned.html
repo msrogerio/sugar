@@ -37,7 +37,6 @@
         {% endfor %}
     </div>
     {% endif %}
-    <p id="logando" hidden>{{acao_id}}</p>
 </div>
 
 {% endblock content %}
@@ -47,12 +46,11 @@
     function update() {
         $(document).ready(function () {
             var id = $('#logando').val();
-            var url = '/check-progress?acao_id' + id;
+            var url = '/check-progress?username=' + $('#my_username').val();
             setInterval(function () {
                 $.get(url, function (data) {
                     $('#show_return').empty();
                     $('#show_return').text(data);
-                    $("#preloader").show();
                 });
             }, 500);
         });

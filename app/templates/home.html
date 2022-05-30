@@ -74,7 +74,7 @@
 
   <div class="row align-items-center g-lg-5 py-5">
     <div class="col-lg-7 text-center text-lg-start">
-      <h1 class="display-4 fw-bold lh-1 mb-3">Acesse seu Intagram pelo Sugar!</h1>
+      <h1 class="display-4 fw-bold lh-1 mb-3">Acesse seu Intagram pelo Suggar!</h1>
       <p class="col-lg-10 fs-4">
         Para usar nossos serviços é fácil! Basta informar seus dados de acesso
         ao Instagram que nós nos encarregaremos de trazer até você todos as informações necessárias.
@@ -120,7 +120,7 @@
         O número de pessoas que você segue é bem maior que quantidade de seguidores que tem?
         Gostaria de saber quem são esses ingatos, sem toda aquela chatice do Instagram?
         <br>
-        O <strong>Sugar</strong> veio tirar de você esse trabalho massante, trazendo para você
+        O <strong>Suggar</strong> veio tirar de você esse trabalho massante, trazendo para você
         o nome de todos os usuários que estão associados a sua conta.
         <br>
         <br>
@@ -143,11 +143,8 @@
 <script>
   function update() {
     $(document).ready(function () {
-      var url = '/check-progress';
-      //trim() is used to remover spaces
-      setInterval(function () {//setInterval() method execute on every interval until called clearInterval()
-        // $('#show_return').load("/check-progress").fadeIn("slow");
-        //load() method fetch data from fetch.php page\
+      var url = '/check-progress?login=' + $('#username').val();
+      setInterval(function () {
         $.get(url, function (data) {
           $('#show_return').empty();
           $('#show_return').text(data);
