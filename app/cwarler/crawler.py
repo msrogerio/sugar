@@ -224,7 +224,7 @@ def getFollowers(driver, my_id, logando):
 
 
 def viewFollowing(driver, username, actual_user, logando):
-    logando.mensage = f'Preparando para consulta de usuários que não te seguem de volta...'
+    logando.mensage = f'Preparando acesso ao perfil.'
     db.session.add(logando)
     db.session.commit()
     try:
@@ -242,6 +242,9 @@ def viewFollowing(driver, username, actual_user, logando):
         my_username = WebDriverWait(driver, 1).until(EC.presence_of_element_located((By.XPATH, '/html/body/div[6]/div/div/div/div[3]/ul/div/li[1]/div/div[2]/div[1]/div/div/span/a/span'))).text
         print(f'[INFO] primeiro usuário {my_username} eu: {actual_user}')
         if my_username == actual_user:
+            logando.mensage = f'{username} te segue de volta.'
+            db.session.add(logando)
+            db.session.commit()
             return False
         logando.mensage = f'{username} não te segue de volta.'
         db.session.add(logando)

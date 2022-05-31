@@ -95,18 +95,55 @@ def index():
         return redirect(url_for('.data_returned', username=username))
 
 
-@main.route('/data-returned', methods=['GET'])
+@main.route('/followers_following', methods=['GET', 'POST'])
 def data_returned():
     username=request.args.get('username')
-    id = Users.query.filter_by(username=username).first().id
-    followers = Folowers.query.filter(Folowers.user_id==id).all()
-    print(len(followers))
-    following = Following.query.filter(Following.user_id==id).all()
-    print(len(following))
     global PASSWORD
-    password = PASSWORD
-    PASSWORD = password
-    return render_template('data-returned.html', followers=followers, following=following, username=username)
+    if request.method == 'GET':
+        id = Users.query.filter_by(username=username).first().id
+        followers = Folowers.query.filter(Folowers.user_id==id).all()
+        following = Following.query.filter(Following.user_id==id).all()
+        return render_template('followers_following.html', followers=followers, following=following, username=username)
+    
+    if request.method == 'POST':
+        if not username:
+            username = request.args.get('username')
+        id = Users.query.filter_by(username=username).first().id
+        logando = CheckProgress.query.filter(CheckProgress.user_id==id).first()
+        
+        logando.mensage = f'Preparando para consulta de usuários que não te seguem de volta...'
+        db.session.add(logando)
+        db.session.commit()
+
+        following = Following.query.filter(Following.user_id==id).all()
+        new_driver.newInstanceDriver()
+        driver = new_driver.driver    
+        
+        openUrl(driver)
+        informCredentials(driver=driver, username=username, password=PASSWORD)
+        submitForm(driver)
+        returnCheck(driver)
+
+        for a in following:
+            if viewFollowing(driver, a.username, username, logando) == True:
+                _unfollow = Unfollow()
+                _unfollow.user_id = id
+                _unfollow.username = a.username
+                db.session.add(_unfollow)
+                db.session.commit()
+        driver.quit()
+        return redirect(url_for('.list_unfollow', username=username))
+
+
+@main.route('/list-unfollow', methods=['GET'])
+def list_unfollow():
+    username=request.args.get('username')
+    if request.method == 'GET':
+        id = Users.query.filter_by(username=username).first().id
+        followers = Folowers.query.filter(Folowers.user_id==id).all()
+        unfollow = Unfollow.query.filter(Unfollow.user_id==id).all()
+        following = Following.query.filter(Following.user_id==id).all()
+        return render_template('data-returned.html', followers=followers, following=following, username=username, unfollow=unfollow) 
 
 
 @main.route('/data-user-clean', methods=['GET'])
@@ -123,38 +160,6 @@ def data_user_clean():
     password = PASSWORD
     PASSWORD = password
     return redirect(url_for('.index'))
-
-
-@main.route('/check-unfollow', methods=['GET', 'POST'])
-def check_unfollow():
-    if request.method == 'GET':
-        username = request.args.get('username')
-        id = Users.query.filter_by(username=username).first().id
-        logando = CheckProgress.query.filter(CheckProgress.user_id==id).first()
-        following = Following.query.filter(Following.user_id==id).all()
-        new_driver.newInstanceDriver()
-        driver = new_driver.driver    
-        global PASSWORD
-        password = PASSWORD
-        PASSWORD = password
-        
-        print(password)
-        openUrl(driver)
-        informCredentials(driver=driver, username=username, password=password)
-        submitForm(driver)
-        returnCheck(driver)
-
-        for a in following:
-            if viewFollowing(driver, a.username, username, logando) == True:
-                _unfollow = Unfollow()
-                _unfollow.user_id = id
-                _unfollow.username = a.username
-                db.session.add(_unfollow)
-                db.session.commit()
-        driver.quit()
-        followers = Folowers.query.filter(Folowers.user_id==id).all()
-        unfollow = Unfollow.query.filter(Unfollow.user_id==id).all()
-        return render_template('data-returned.html', followers=followers, following=following, username=username, unfollow=unfollow) 
 
 
 @main.route('/check-progress', methods=['GET'])
@@ -206,3 +211,8 @@ def queryForLogin(login):
         db.session.commit()
         logando = CheckProgress.query.filter(CheckProgress.user_id==user.id).first()
         return jsonify(logando.mensage)
+
+
+@main.route('/unfollow', methods=['GET', 'POST'])
+def unfollow():
+    pass

@@ -75,22 +75,32 @@
 </head>
 
 <body class="bg-light">
-    <div class="navbar navbar-expand-lg fixed-top bg-white text-dark">
-        <nav class="nav text-dark" aria-label="Secondary navigation ">
-            <a class="nav-link active text-dark" aria-current="page" href="#home">
-                <img class="d-block mx-auto" src="{{url_for('static', filename='img/sugar_icon_not_letters.png')}}"
-                    alt="" height="25">
-            </a>
-            <a class="nav-link text-dark" href="#logar">Logar</a>
-            {% if username %}
-            <a class="nav-link text-dark" href="{{url_for('.data_user_clean', username=username)}}">Limpar dados para o
-                usuário <b id="my_username">{{username}}</b></a>
-            <a class="nav-link text-dark" onclick="update()" href="{{url_for('.check_unfollow', username=username)}}">Consultar quem não
-                segue de volta</b></a>
-            {% endif %}
-        </nav>
-    </div>
 
+    <nav class="py-2 bg-light fixed-top border-bottom bg-white text-dark">
+        <div class="container d-flex flex-wrap">
+            <ul class="nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link link-dark px-2" aria-current="page" href="#home">
+                        <img class="d-block mx-auto" src="{{url_for('static', filename='img/sugar_icon_not_letters.png')}}"
+                            alt="" height="25">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#logar">Logar</a>
+                </li>
+            </ul>
+            {% if username %}
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="{{url_for('.data_user_clean', username=username)}}">Limpar dados</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark">Usuário logado: <b id="my_username">{{username}}</b></a>
+                </li>
+            </ul>
+            {% endif %}
+        </div>
+    </nav>
 
     <main class="container">
         {% block content %}{% endblock content %}
