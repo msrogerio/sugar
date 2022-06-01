@@ -272,7 +272,12 @@ def IStoppedFollowing(driver, username, logando):
     step1 = False
     step2 = False
     try:
-        WebDriverWait(driver, 1).until(EC.element_to_be_clickable((By.XPATH, '/html/body/div[1]/div/div[1]/div/div[1]/div/div/div[1]/div[1]/section/main/div/header/section/div[1]/div[1]/div/div[2]/div/span/span[1]/button'))).click()
+        # WebDriverWait(driver, 1).until(EC.element_to_be_clickable((By.XPATH, '/html/body/div[1]/div/div[1]/div/div[1]/div/div/div[1]/div[1]/section/main/div/header/section/div[1]/div[1]/div/div[2]/div/span/span[1]'))).click()
+        driver.execute_script(
+                """
+                $('._6VtSN').click();
+                """
+            )
         logando.mensage = f'Clicou no botão de "deixar de seguir"'
         db.session.add(logando)
         db.session.commit()
@@ -283,7 +288,12 @@ def IStoppedFollowing(driver, username, logando):
         return False
 
     try:
-        WebDriverWait(driver, 1).until(EC.element_to_be_clickable((By.XPATH, '/html/body/div[1]/div/div[1]/div/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div/div/div/div[3]/button[1]'))).click()
+        driver.execute_script(
+                """
+                $('.-Cab_').click();
+                """
+            )
+        # WebDriverWait(driver, 1).until(EC.element_to_be_clickable((By.XPATH, '/html/body/div[1]/div/div[1]/div/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div/div/div/div[3]/button[1]'))).click()
         logando.mensage = f'Encontrou um perfil privado. Validado a ação de deixar de seguir para perfil privado.'
         db.session.add(logando)
         db.session.commit()

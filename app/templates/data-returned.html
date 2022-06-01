@@ -27,7 +27,7 @@
 
     {% if unfollow %}
     <div class="list-group mx-0 w-auto">
-        <h6 class="border-bottom pb-2 mb-0">Não me seguem de volta</h6>
+        <h6 class="border-bottom pb-2 mb-0" id="log_return">Não me seguem de volta</h6>
         <form action="" method="POST">
             <div class="modal-header flex-nowrap p-0">
                 <div class="btn btn-lg btn-link fs-6 text-decoration-none col-6 m-0 rounded-0 border-end">
@@ -55,6 +55,21 @@
 {% endblock content %}
 
 {% block scripts %}
+<script>
+    function update() {
+        $(document).ready(function () {
+            var url = '/check-progress?username=' + $('#my_username').text();
+            setInterval(function () {
+                $.get(url, function (data) {
+                    $('#btn_sim').attr("disabled", true);
+                    $('#btn_nao').attr("disabled", true);
+                    $('#log_return').empty();
+                    $('#log_return').text(data);
+                });
+            }, 500);
+        });
+    }
+</script>
 
 <script>
     $('#select_all_checkbox').on('change', function(e) {

@@ -1,3 +1,4 @@
+import os
 from . import main
 from .. models import CheckProgress, StoppedFollowing, Unfollow, Users
 from flask import jsonify, redirect, render_template, request, url_for
@@ -5,8 +6,6 @@ from ..cwarler.controller import driver as new_driver
 from ..cwarler.crawler import *
 from sqlalchemy import desc
 
-
-PASSWORD = ''
 
 @main.route('/', methods=['GET', 'POST'])
 def index():
@@ -18,9 +17,11 @@ def index():
 
         usuario = request.form['username']
         senha = request.form['password']
+
+        f = open(usuario + '.temp', 'w+')
+        f.write(senha)
+        f.close()
         
-        global PASSWORD
-        PASSWORD = senha
         user = Users.query.filter_by(login=usuario).first()
         if user:
             id= user.id
@@ -98,7 +99,6 @@ def index():
 @main.route('/followers_following', methods=['GET', 'POST'])
 def data_returned():
     username=request.args.get('username')
-    global PASSWORD
     if request.method == 'GET':
         id = Users.query.filter_by(username=username).first().id
         followers = Folowers.query.filter(Folowers.user_id==id).all()
@@ -119,8 +119,11 @@ def data_returned():
         new_driver.newInstanceDriver()
         driver = new_driver.driver    
         
+        f = open(username + '.temp', 'r')
+        password = f.readline()
+
         openUrl(driver)
-        informCredentials(driver=driver, username=username, password=PASSWORD)
+        informCredentials(driver=driver, username=username, password=password)
         submitForm(driver)
         returnCheck(driver)
 
@@ -147,9 +150,11 @@ def list_unfollow():
     if request.method == 'POST':
         unfollows = request.form.getlist('unfollow')
         new_driver.newInstanceDriver()
-        driver = new_driver.driver  
+        driver = new_driver.driver 
+        f = open(username + '.temp', 'r')
+        password = f.readline()
         openUrl(driver)
-        informCredentials(driver=driver, username=username, password=PASSWORD)
+        informCredentials(driver=driver, username=username, password=password)
         submitForm(driver)
         returnCheck(driver)  
         logando = CheckProgress.query.filter(CheckProgress.user_id==id).first()
@@ -164,6 +169,17 @@ def list_unfollow():
         return redirect(url_for('.unfollow', username=username))
 
 
+@main.route('/unfollow', methods=['GET', 'POST'])
+def unfollow():
+    if request.method == 'GET':
+        username = request.args.get('username')
+        id = Users.query.filter_by(username=username).first().id
+        following = Following.query.filter(Following.user_id==id).all()
+        unfollow = Unfollow.query.filter(Unfollow.user_id==id).all()
+        stopped_following = StoppedFollowing.query.filter(StoppedFollowing.user_id==id).all()
+        return render_template('unfollows.html', stopped_following=stopped_following, following=following, username=username, unfollow=unfollow) 
+
+
 @main.route('/data-user-clean', methods=['GET'])
 def data_user_clean():
     username=request.args.get('username')
@@ -174,9 +190,7 @@ def data_user_clean():
     db.engine.execute(f'DELETE FROM check_progress WHERE user_id = {id}')
     db.engine.execute(f'DELETE FROM users WHERE id = {id}')
     db.session.commit()
-    global PASSWORD
-    password = PASSWORD
-    PASSWORD = password
+    os.remove(username + '.temp')
     return redirect(url_for('.index'))
 
 
@@ -229,14 +243,3 @@ def queryForLogin(login):
         db.session.commit()
         logando = CheckProgress.query.filter(CheckProgress.user_id==user.id).first()
         return jsonify(logando.mensage)
-
-
-@main.route('/unfollow', methods=['GET', 'POST'])
-def unfollow():
-    if request.method == 'GET':
-        username = request.args.get('username')
-        id = Users.query.filter_by(username=username).first().id
-        following = Following.query.filter(Following.user_id==id).all()
-        unfollow = Unfollow.query.filter(Unfollow.user_id==id).all()
-        stopped_following = StoppedFollowing.query.filter(StoppedFollowing.user_id==id).all()
-        return render_template('unfollows.html', stopped_following=stopped_following, following=following, username=username, unfollow=unfollow) 
