@@ -1,5 +1,5 @@
 from . import main
-from .. models import CheckProgress, Unfollow, Users
+from .. models import CheckProgress, StoppedFollowing, Unfollow, Users
 from flask import jsonify, redirect, render_template, request, url_for
 from ..cwarler.controller import driver as new_driver
 from ..cwarler.crawler import *
@@ -135,15 +135,33 @@ def data_returned():
         return redirect(url_for('.list_unfollow', username=username))
 
 
-@main.route('/list-unfollow', methods=['GET'])
+@main.route('/list-unfollow', methods=['GET', 'POST'])
 def list_unfollow():
     username=request.args.get('username')
+    id = Users.query.filter_by(username=username).first().id
     if request.method == 'GET':
-        id = Users.query.filter_by(username=username).first().id
         followers = Folowers.query.filter(Folowers.user_id==id).all()
         unfollow = Unfollow.query.filter(Unfollow.user_id==id).all()
         following = Following.query.filter(Following.user_id==id).all()
         return render_template('data-returned.html', followers=followers, following=following, username=username, unfollow=unfollow) 
+    if request.method == 'POST':
+        unfollows = request.form.getlist('unfollow')
+        new_driver.newInstanceDriver()
+        driver = new_driver.driver  
+        openUrl(driver)
+        informCredentials(driver=driver, username=username, password=PASSWORD)
+        submitForm(driver)
+        returnCheck(driver)  
+        logando = CheckProgress.query.filter(CheckProgress.user_id==id).first()
+        for i in unfollows:
+            if IStoppedFollowing(driver, i, logando) == True:
+                db.engine.execute(f'DELETE FROM following WHERE username = {i}')
+                stopped_following = StoppedFollowing()
+                stopped_following.username = i
+                stopped_following.user_id = id
+                db.session.add(stopped_following)
+                db.session.commit()
+        return redirect(url_for('.unfollow', username=username))
 
 
 @main.route('/data-user-clean', methods=['GET'])
@@ -215,4 +233,10 @@ def queryForLogin(login):
 
 @main.route('/unfollow', methods=['GET', 'POST'])
 def unfollow():
-    pass
+    if request.method == 'GET':
+        username = request.args.get('username')
+        id = Users.query.filter_by(username=username).first().id
+        following = Following.query.filter(Following.user_id==id).all()
+        unfollow = Unfollow.query.filter(Unfollow.user_id==id).all()
+        stopped_following = StoppedFollowing.query.filter(StoppedFollowing.user_id==id).all()
+        return render_template('unfollows.html', stopped_following=stopped_following, following=following, username=username, unfollow=unfollow) 

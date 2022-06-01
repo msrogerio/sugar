@@ -229,7 +229,6 @@ def viewFollowing(driver, username, actual_user, logando):
     db.session.commit()
     try:
         driver.get(f'https://www.instagram.com/{username}')
-        driver.implicitly_wait(6)
     except Exception as ex:
         print(f'{WARNING}[Erro] Não conseguiu abrir a url. {ex} {ENDC}')
         return False
@@ -253,4 +252,53 @@ def viewFollowing(driver, username, actual_user, logando):
     except Exception as ex:
         print(f'{WARNING}[Erro] Não conseguiu exetuar a rotina de intereção com o selenium. {ex} {ENDC}')
         return False
+        
+
+def IStoppedFollowing(driver, username, logando):
+    logando.mensage = f'Preparando acesso ao perfil.'
+    db.session.add(logando)
+    db.session.commit()
+    
+    try:
+        driver.get(f'https://www.instagram.com/{username}')
+    except Exception as ex:
+        print(f'{WARNING}[Erro] Não conseguiu abrir a url. {ex} {ENDC}')
+        return False
+    
+    logando.mensage = f'Acessou a urls para o perfil {username}'
+    db.session.add(logando)
+    db.session.commit()
+
+    step1 = False
+    step2 = False
+    try:
+        WebDriverWait(driver, 1).until(EC.element_to_be_clickable((By.XPATH, '/html/body/div[1]/div/div[1]/div/div[1]/div/div/div[1]/div[1]/section/main/div/header/section/div[1]/div[1]/div/div[2]/div/span/span[1]/button'))).click()
+        logando.mensage = f'Clicou no botão de "deixar de seguir"'
+        db.session.add(logando)
+        db.session.commit()
+        print('[INFO] Clicou no botão de "deixar de seguir"')
+        step1 = True
+    except Exception as ex:
+        print(f'{WARNING}[Erro] Não conseguiu exetuar a rotina de intereção com o selenium. {ex} {ENDC}')
+        return False
+
+    try:
+        WebDriverWait(driver, 1).until(EC.element_to_be_clickable((By.XPATH, '/html/body/div[1]/div/div[1]/div/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div/div/div/div[3]/button[1]'))).click()
+        logando.mensage = f'Encontrou um perfil privado. Validado a ação de deixar de seguir para perfil privado.'
+        db.session.add(logando)
+        db.session.commit()
+        print('[INFO] Encontrou um perfil privado. Validado a ação de deixar de seguir para perfil privado.')
+        step2 = True
+    except Exception as ex:
+        print(f'{WARNING}[Erro] Não conseguiu exetuar a rotina de intereção com o selenium. {ex} {ENDC}')
+        return False
+    
+    if step1 == True or step2 == True:
+        logando.mensage = f'Deixou de seguir {username}'
+        db.session.add(logando)
+        db.session.commit()
+        print(f'[INFO] Deixou de seguir {username}')
+        return True
+    return False
+
         

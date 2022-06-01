@@ -60,3 +60,15 @@ class CheckProgress(db.Model):
 
     def __repr__(self):
         return '[ CheckProgress ] id: %d | total de registros: %s ' % (self.id, self.total_recordsusername)
+
+
+class StoppedFollowing(db.Model):
+    __tablename__ = 'stopped_following'
+    id = db.Column(db.Integer(), primary_key=True)  
+    username = db.Column(db.String(255), default='')
+    name = db.Column(db.String(532), default='')
+    email = db.Column(db.String(255), default='')
+    user_id = db.Column(db.Integer(), db.ForeignKey('users.id'), nullable=True)
+
+    def __repr__(self):
+        return '[ StoppedFollowing ] id: %d | username: %s ' % (self.id, self.username)
