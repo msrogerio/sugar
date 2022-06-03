@@ -4,13 +4,13 @@ from .. models import CheckProgress, StoppedFollowing, Unfollow, Users
 from flask import jsonify, redirect, render_template, request, url_for
 from ..cwarler.controller import driver as new_driver
 from ..cwarler.crawler import *
-from sqlalchemy import desc
 
 
 @main.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'GET':
         return render_template('home.html')
+    
     if request.method == 'POST':
         new_driver.newInstanceDriver()
         driver = new_driver.driver
@@ -43,55 +43,70 @@ def index():
 
         if openUrl(driver) == False:
             driver.quit()
-            return render_template('home.html')
+            return redirect(url_for('.data_user_clean', login=user.login)) 
         logando.mensage = f'Acessando o Instagram.'
         db.session.add(logando)
         db.session.commit()
 
         if informCredentials(driver, usuario, senha) == False:
             driver.quit()
-            return render_template('home.html')
+            return redirect(url_for('.data_user_clean', login=user.login)) 
         logando.mensage = f'Validando usuário e senha.'
         db.session.add(logando)
         db.session.commit()
         
         if submitForm(driver) == False:
             driver.quit()
-            return render_template('home.html')
+            return redirect(url_for('.data_user_clean', login=user.login)) 
         
         if returnCheck(driver):
             driver.quit()
             logando.mensage = f'Usuário ou senha incorretos.'
             db.session.add(logando)
             db.session.commit()
-            return render_template('home.html')
+            return redirect(url_for('.data_user_clean', login=user.login)) 
+        
         logando.mensage = f'Acesso autorizado.'
         db.session.add(logando)
         db.session.commit()
 
         if notSaveLoginInformation(driver) == False:
             driver.quit()
-            return render_template('home.html')
+            return redirect(url_for('.data_user_clean', username=username))
 
-        if openProfile(driver) == False:
+        if openMenuProfile(driver) == False:
             driver.quit()
-            return render_template('home.html')
+            return redirect(url_for('.data_user_clean', username=username))
+
+        href = hrefProfile(driver)
+        if not href:
+            driver.quit()
+            return redirect(url_for('.data_user_clean', login=user.login))       
+        src = srcProfile(driver)
+        
+        try:
+            driver.get(href)
+            print(f'Chamou a url do perfil de usuário: {href}')
+        except Exception as ex:
+            driver.quit()
+            return redirect(url_for('.data_user_clean', login=user.login))
 
         username = getMyUserName(driver)
         user.username = username
+        user.src = src
         db.session.add(user)
         db.session.commit()
         
         if not username:
-            return render_template('home.html')
+            return redirect(url_for('.data_user_clean', login=user.login)) 
         
         logando.mensage = f'Perfil do usuários {username} acesado.'
         db.session.add(logando)
         db.session.commit()
         
-        li_followers, li_following = getFollowers(driver, id,  logando)
+        li_followers, li_following = getFollowersAndFollowing(driver, id, username, logando)
         if not li_following and not li_followers:
-            return render_template('home.html') 
+            return redirect(url_for('.data_user_clean', username=username))  
         driver.quit()
         return redirect(url_for('.data_returned', username=username))
 
@@ -182,8 +197,21 @@ def unfollow():
 
 @main.route('/data-user-clean', methods=['GET'])
 def data_user_clean():
-    username=request.args.get('username')
-    id = Users.query.filter_by(username=username).first().id
+    username = None
+    id = None
+    try:
+        username=request.args.get('username')
+    except:
+        pass
+    if username:
+        id = Users.query.filter_by(username=username).first().id
+    else:
+        try:
+            login=request.args.get('login')
+            username = login
+            id = Users.query.filter_by(login=login).first().id
+        except:
+            pass
     db.engine.execute(f'DELETE FROM following WHERE user_id = {id}')
     db.engine.execute(f'DELETE FROM folowers WHERE user_id = {id}')
     db.engine.execute(f'DELETE FROM unfollow WHERE user_id = {id}')
